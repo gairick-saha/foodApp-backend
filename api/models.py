@@ -1,19 +1,23 @@
 from django.db import models
-from bson.objectid import ObjectId
 
 
 class MenuCard(models.Model):
     menu_id = models.AutoField
     Menu_Type = models.CharField(max_length=120, db_index=True, default='')
     slug = models.SlugField(max_length=120, db_index=True, default='')
+    image = models.ImageField(upload_to='shop/images', blank=True)
 
     class Meta:
         ordering = ['Menu_Type', ]
-        verbose_name = 'Menu Card'
-        verbose_name_plural = 'Menu Cards'
+        verbose_name = 'Menu Type'
+        verbose_name_plural = 'Menu Types'
 
     def __str__(self):
         return self.Menu_Type
+
+    @property
+    def choices(self):
+        return self.choice_set.all()
 
 
 class Menu(models.Model):
@@ -28,11 +32,6 @@ class Menu(models.Model):
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    
-    class Meta:
-        ordering = ['item_name', ]
-        verbose_name = 'Menu Item'
-        verbose_name_plural = 'Menu Items'
 
     def __str__(self):
         return self.item_name

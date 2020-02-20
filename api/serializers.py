@@ -6,12 +6,12 @@ class MenuCardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MenuCard
-        fields = ['Menu_Type', 'slug', 'image']
-        read_only_field = ('Menu_Type', )
+        fields = '__all__'
+        read_only_fields = ('Menu_Type', )
 
 class MenuSerializer(serializers.ModelSerializer):
-    
-    # category = MenuCardSerializer(many=True, read_only=True)
+
+    category = MenuCardSerializer(read_only=True)
 
     class Meta:
         model = Menu
