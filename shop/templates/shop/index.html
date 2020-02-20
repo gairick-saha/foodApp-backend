@@ -1,0 +1,175 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %}
+HOME
+{% endblock  %}
+
+{% block header %}
+<div class="mx-auto my-2 order-0 order-md-1 position-relative">
+  <a class="mx-auto" href="#">
+    <img src="/static/shop/images/logo.png" style="height: 80px;" alt="Home" class="rounded-circle img-responsive">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</div>
+<div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+  <ul class="navbar-brand mr-auto text-center">
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#"> &nbsp;<strong>foodie</strong> </a>
+    </li>
+  </ul>
+</div>
+</div>
+<nav class="navbar w-50 dual-collapse2 order-2 order-md-2">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+  {% endblock header %}
+
+  {% block body %}
+</nav>
+</nav>
+<div class="jumbotron big-banner" style="height: 500px; width: 100%; padding-top:100px;">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="col4 text-light ">
+          <h1 style="font-style:italic; font-family:sans-serif; "><strong>Feeling Hungry</strong></h1>
+          <h2><strong>Seach Your <br /> Food <br />and<br />Order Online</strong></h2>
+        </div>
+        <br>
+        <button type="button" class="btn btn-success btn-lg"><strong><a href="#"
+              class="text-light">Menu</a></strong></button>
+      </div>
+      <div class="col">
+        <div class="col4 text-light">
+          <h1 style="font-style:italic; font-family:sans-serif; "><strong>Not Registered<br />With Us</strong></h1>
+          <h2><strong>Join Us Today<br />and<br>Oder Faster</strong></h2>
+        </div>
+        <br>
+        <button type="button" class="btn btn-success btn-lg"><strong><a href="#" class="text-light">Join
+              Us</a></strong></button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="content">
+  <div class="ordering-section" id="Order">
+    <div class="container">
+      <div class="ordering-section-head text-center wow bounceInRight" data-wow-delay="0.4s">
+        <h3>Ordering food was never so easy</h3>
+        <div class="dotted-line">
+          <h4>Just 4 steps to follow </h4>
+        </div>
+      </div>
+      <div class="i-am-center">
+        <div class="row ">
+          <div class="col-sm-2 col-md-2">
+            <div class="thumbnail borders text-light">
+              <p>Choose <span>From Menu</span></p>
+            </div>
+          </div>
+          <div class="col-sm-2 col-md-2 ">
+            <div class="thumbnail borders text-light">
+
+              <p>Order <span>Your Food</span></p>
+            </div>
+          </div>
+          <div class="col-sm-2 col-md-2">
+            <div class="thumbnail borders text-light">
+              <p>Pay <span> Online </span></p>
+              <label></label>
+            </div>
+          </div>
+          <div class="col-sm-2 col-md-2">
+            <div class="thumbnail borders text-light">
+              <p>Enjoy <span>your food </span></p>
+              <label></label>
+
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container col-md-9">
+  <div class="top-cuisine-head">
+    <h3>Menu</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-4 ">
+      <div class="thumbnail">
+        <a href="">
+          <img src="/static/shop/images/cuisine1.jpg" class="img-responsive" alt="" />
+        </a>
+      </div>
+      <div class="caption border col-sm-4">
+        <h5 class="text-secondary"><strong>INDIAN</strong></h5>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="thumbnail">
+        <a href="">
+          <img src="/static/shop/images/cuisine2.jpg" class="img-responsive" alt="" />
+        </a>
+      </div>
+      <div class="caption border col-sm-4">
+        <h5 class="text-secondary"><strong>CHIENESE</strong></h5>
+      </div>
+    </div>
+
+    <div class="col-md-4 ">
+      <div class="thumbnail">
+        <a href="">
+          <img src="/static/shop/images/cuisine3.jpg" class="img-responsive" alt="" />
+        </a>
+      </div>
+      <div class="caption border col-sm-6">
+        <h5 class="text-secondary"><strong>ITALIAN</strong></h5>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="thumbnail">
+        <a href="">
+          <img src="/static/shop/images/cuisine4.jpg" class="img-responsive" alt="" />
+        </a>
+      </div>
+      <div class="caption border col-sm-4">
+        <h5 class="text-secondary"><strong>BENGALI</strong></h5>
+      </div>
+    </div>
+    <div class="col-md-4 ">
+      <div class="thumbnail">
+        <a href="">
+          <img src="/static/shop/images/cuisine5.jpg" class="img-responsive" alt="" />
+        </a>
+      </div>
+      <div class="caption border col-sm-4">
+        <h5 class="text-secondary"><strong>DESERTS</strong></h5>
+      </div>
+    </div>
+    <div class="col-md-4 ">
+      <div class="thumbnail">
+        <a href="">
+          <img src="/static/shop/images/cuisine6.jpg" class="img-responsive" alt="" />
+        </a>
+      </div>
+      <div class="caption border col-md-6">
+        <h5 class="text-secondary"><strong>ICE CREAM</strong></h5>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+  </div>
+</div>
+{% endblock body %}
