@@ -1,7 +1,11 @@
 {
     "python.linting.enabled": true,
-    "python.pythonPath": "~/Desktop/foodApp/web/env/bin/activate",
+    "python.pythonPath": "~/Desktop/food-app/web/env/bin/python",
     "python.linting.pylintArgs": [
-        "--load-plugins=pylint_django"
+        "--load-plugins=pylint_django",
+        "--disable=missing-docstring"
     ],
+    "files.autoSave": "onWindowChange",
+    "git.enableSmartCommit": true,
+
 }
